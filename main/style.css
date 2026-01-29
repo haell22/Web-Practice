@@ -1,0 +1,244 @@
+
+
+body {
+    background-image: url("C:/Users/haell/OneDrive/Documents/Themes/background.jpg");
+    font-family: 'Courier New', Courier, monospace;
+    background-size: cover;
+    background-position: center; 
+    margin: 0;
+    min-height: calc(100vh - 100px);
+}
+
+    
+/* Navbar Style */
+
+.navbar {
+    background-color: purple;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+
+
+.navbar h1 {
+    color: white;
+    font-size: 44px;
+    width: auto;
+    margin-left: 20px;
+}
+
+.navbar ul {
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: stretch;
+}
+
+.navbar ul a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 24px;
+    transition: 0.2s ease-in-out 0.2s;
+}
+
+
+.navbar ul a:hover {
+    color: #cb5dda;
+}
+
+.navbar ul a:active {
+    color: #651470;
+}
+
+/* Content Style */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh);
+}
+
+/* Login Page Style */
+
+.main-box {
+    width: 1100px;
+    height: 600px;
+    border: 2px solid black;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .8;
+
+
+
+}
+
+.box-1 {
+    min-width: 400px;
+    width: 780px;
+    height: 100%;
+    flex-shrink: 1;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+    background: linear-gradient(to top right, #ab21bd, #2a5298);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+h1 {
+    font-size: 64px;
+    color: white;
+    text-align: center;
+    width: 70%;
+}
+
+p {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    width: 70%;
+}
+
+
+.box-2 {
+    min-width: 200px;
+    width: 420px;
+    height: 100%;
+    background-color: purple;
+    flex-shrink: 1;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h2 {
+    font-size: 30px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.login {
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60%;
+}
+
+.login input {
+    width: 80%;
+    padding: 18px;
+    border-radius: 40px;
+    margin: 10px;
+    background: rgba(155, 19, 143, 0.9);
+    color: white;
+    font-size: medium;
+}
+
+.login input:hover {
+    background-color: rgba(223, 45, 208, 0.9);
+}
+
+#login-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease-in-out 0.2s;
+}
+
+.login button {
+    background-color: #ab21bd;
+    color: white;
+    height: 12%;
+    width: 90%;
+    border-radius: 40px;
+    padding: 20px;
+    margin: 10px;
+    font-size: large;
+    cursor: pointer;
+
+}
+
+.login button:hover {
+    background-color: #cb5dda;
+    transform: translateY(-5px);
+}
+
+
+
+
+@media (max-width: 1300px) and (max-height: 800px) {
+
+    .navbar h1 {
+        font-size: 6vw;
+        font-size: 6vh;
+    }
+
+    .navbar ul a{
+        font-size: 3vw;
+        font-size: 3vh;
+    }
+
+    .main-box {
+        width: 90vw;
+        height: 90vh;
+        animation-name: rotateAnimation; /* Reference the name of your keyframes */
+        animation-duration: 2s; /* Set the duration of one animation cycle */
+        animation-timing-function: linear; /* Define a steady pace for the animation */
+        animation-iteration-count: infinite; /* Repeat the animation indefinitely */
+    }
+
+    .box-1 {
+        width: 55%;
+        height: 100%;
+    }
+
+    .box-1 h1 {
+        font-size: 8vw;
+        font-size: 8vh;
+    }
+    .box-1 p {
+        font-size: 3vw;
+        font-size: 3vh;
+    }
+
+    .box-2 {
+        width: 45%;
+        height: 100%;
+    }
+
+    .login h2 {
+        font-size: 4vw;
+        font-size: 4vh;
+    }
+
+    .login input {
+        font-size: 2vw;
+        font-size: 2vh;
+    }
+
+    .login button {
+        font-size: 3vw;
+        font-size: 3vh;
+    }
+}
+
